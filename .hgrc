@@ -1,0 +1,10 @@
+[ui]
+username = Derek Erdmann <derek@derekerdmann.com>
+
+[extensions]
+graphlog =
+color =
+fetch =
+
+[color]
+mode = win32

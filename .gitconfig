@@ -7,3 +7,5 @@
     com = commit    
 [core]
 	editor = gvim
+[color]
+	ui = true

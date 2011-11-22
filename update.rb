@@ -2,7 +2,7 @@ require 'fileutils'
 
 scriptname = File.basename __FILE__
 
-ignore = %W( . .. .hg .git #{scriptname} )
+ignore = %W( . .. .hg .git .gitignore #{scriptname} )
 ignoreext = %W( .swp )
 
 src = File.expand_path( File.dirname( __FILE__) )

@@ -3,7 +3,7 @@
 	email = derek@derekerdmann.com
 [alias]
     st = status
-    glog = log --graph
+    glog = log --graph --oneline
     com = commit    
 [core]
 	editor = gvim

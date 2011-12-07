@@ -8,3 +8,6 @@ fetch =
 
 [color]
 mode = win32
+status.added = green
+status.removed = red
+status.unknown = magenta

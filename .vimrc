@@ -22,3 +22,7 @@ au BufRead,BufNewFile *.coffee set filetype=coffee
 
 call pathogen#infect()
 call pathogen#helptags()
+
+
+autocmd FileType html,eruby let b:closetag_html_style=1
+autocmd FileType html,xhtml,xml,eruby source ~/vimfiles/bundle/closetag/plugin/closetag.vim

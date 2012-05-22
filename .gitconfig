@@ -7,5 +7,6 @@
     com = commit    
 [core]
 	editor = gvim
+    excludesfile = ~/.gitignore-global
 [color]
 	ui = true

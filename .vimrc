@@ -15,10 +15,13 @@ autocmd FileType yaml setlocal shiftwidth=2 tabstop=2
 autocmd FileType cucumber setlocal shiftwidth=2 tabstop=2
 autocmd FileType coffee setlocal shiftwidth=2 tabstop=2
 
+autocmd FileType gitcommit set textwidth=72
+
 au BufNewFile,BufRead *.prolog set filetype=prolog
 au BufRead,BufNewFile *.als set filetype=alloy4
 au BufRead,BufNewFile *.pml set filetype=promela
 au BufRead,BufNewFile *.coffee set filetype=coffee
+au BufRead,BufNewFile *.kml set filetype=xml
 
 call pathogen#infect()
 call pathogen#helptags()

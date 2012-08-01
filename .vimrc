@@ -23,9 +23,5 @@ au BufRead,BufNewFile *.pml set filetype=promela
 au BufRead,BufNewFile *.coffee set filetype=coffee
 au BufRead,BufNewFile *.kml set filetype=xml
 
-call pathogen#infect()
-call pathogen#helptags()
-
-
 autocmd FileType html,eruby let b:closetag_html_style=1
 autocmd FileType html,xhtml,xml,eruby source ~/vimfiles/bundle/closetag/plugin/closetag.vim

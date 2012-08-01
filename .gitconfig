@@ -12,3 +12,5 @@
 	ui = true
 [push]
 	default = upstream
+[url "git@github.com:"]
+  insteadOf = gh:

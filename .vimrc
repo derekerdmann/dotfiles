@@ -2,7 +2,9 @@ syntax on
 
 set enc=utf-8
 
-set smartindent
+set autoindent
+filetype indent plugin on
+
 set tabstop=4
 set shiftwidth=4
 set expandtab

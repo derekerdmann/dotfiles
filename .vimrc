@@ -21,6 +21,3 @@ autocmd BufRead,BufNewFile *.pml set filetype=promela
 autocmd BufRead,BufNewFile *.coffee set filetype=coffee
 autocmd BufRead,BufNewFile *.kml set filetype=xml
 autocmd BufRead,BufNewFile *.frag,*.vert,*.fp,*.vp,*.glsl set filetype=glsl 
-
-autocmd FileType html,eruby let b:closetag_html_style=1
-autocmd FileType html,xhtml,xml,eruby source ~/vimfiles/bundle/closetag/plugin/closetag.vim

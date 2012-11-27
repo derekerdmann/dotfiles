@@ -10,8 +10,13 @@ set shiftwidth=4
 set expandtab
 
 autocmd FileType markdown set nofoldenable
-autocmd FileType ruby, eruby, haml, yaml, cucumber, coffee, javascript
-    \ setlocal shiftwidth=2 tabstop=2
+autocmd FileType ruby setlocal shiftwidth=2 tabstop=2
+autocmd FileType eruby setlocal shiftwidth=2 tabstop=2
+autocmd FileType haml setlocal shiftwidth=2 tabstop=2
+autocmd FileType yaml setlocal shiftwidth=2 tabstop=2
+autocmd FileType cucumber setlocal shiftwidth=2 tabstop=2
+autocmd FileType coffee setlocal shiftwidth=2 tabstop=2
+autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
 
 autocmd FileType gitcommit set textwidth=72
 

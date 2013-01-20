@@ -9,6 +9,8 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
+set backspace=indent,eol,start
+
 autocmd FileType markdown set nofoldenable
 autocmd FileType ruby setlocal shiftwidth=2 tabstop=2
 autocmd FileType eruby setlocal shiftwidth=2 tabstop=2

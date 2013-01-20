@@ -5,6 +5,7 @@
     st = status
     glog = log --graph --oneline
     com = commit    
+    last = log -1
 [core]
 	editor = gvim
     excludesfile = ~/.gitignore-global

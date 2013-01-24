@@ -3,7 +3,7 @@
 	email = derek@derekerdmann.com
 [alias]
     st = status
-    glog = log --graph --oneline
+    glog = log --pretty=format:'%C(yellow)%h%Creset%C(green)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --graph
     com = commit    
     last = log -1
 [core]

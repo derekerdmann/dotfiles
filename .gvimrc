@@ -9,3 +9,5 @@ set t_vb=
 set noerrorbells
 set novisualbell
 
+map <MiddleMouse> <Nop>
+imap <MiddleMouse> <Nop>

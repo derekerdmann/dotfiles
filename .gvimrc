@@ -11,3 +11,5 @@ set novisualbell
 
 map <MiddleMouse> <Nop>
 imap <MiddleMouse> <Nop>
+
+set clipboard=unnamed

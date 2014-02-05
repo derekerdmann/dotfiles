@@ -20,6 +20,7 @@ autocmd FileType cucumber setlocal shiftwidth=2 tabstop=2
 autocmd FileType coffee setlocal shiftwidth=2 tabstop=2
 
 autocmd FileType tex set spell
+autocmd FileType markdown set spell
 
 autocmd FileType gitcommit set textwidth=72
 

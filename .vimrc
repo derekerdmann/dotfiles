@@ -9,6 +9,11 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
+set number
+set ignorecase
+" color gutter after 80 chars
+set cc=81
+
 set backspace=indent,eol,start
 
 autocmd FileType markdown set nofoldenable

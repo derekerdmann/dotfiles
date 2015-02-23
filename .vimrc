@@ -14,7 +14,11 @@ set ignorecase
 " color gutter after 80 chars
 set cc=81
 
+set clipboard=unnamed
+
 set backspace=indent,eol,start
+
+set dir=$USERPROFILE/vimtemp,.
 
 autocmd FileType markdown set nofoldenable
 autocmd FileType ruby setlocal shiftwidth=2 tabstop=2
@@ -35,3 +39,5 @@ autocmd BufRead,BufNewFile *.pml set filetype=promela
 autocmd BufRead,BufNewFile *.coffee set filetype=coffee
 autocmd BufRead,BufNewFile *.kml set filetype=xml
 autocmd BufRead,BufNewFile *.frag,*.vert,*.fp,*.vp,*.glsl set filetype=glsl 
+
+execute pathogen#infect()

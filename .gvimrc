@@ -15,3 +15,5 @@ imap <MiddleMouse> <Nop>
 set clipboard=unnamed
 
 hi ColorColumn guibg=#303030
+
+set lines=70 columns=130

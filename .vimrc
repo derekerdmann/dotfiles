@@ -18,6 +18,11 @@ set clipboard=unnamed
 
 set backspace=indent,eol,start
 
+" Search highlighting, press space to clear
+set hlsearch
+nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
+
+" Use global file for swap instead of working dir
 set dir=$USERPROFILE/vimtemp,.
 
 autocmd FileType markdown set nofoldenable
@@ -39,5 +44,7 @@ autocmd BufRead,BufNewFile *.pml set filetype=promela
 autocmd BufRead,BufNewFile *.coffee set filetype=coffee
 autocmd BufRead,BufNewFile *.kml set filetype=xml
 autocmd BufRead,BufNewFile *.frag,*.vert,*.fp,*.vp,*.glsl set filetype=glsl 
+autocmd BufRead,BufNewFile *.xaml,*.resw,*.dui,*.man set filetype=xml
+autocmd BufRead,BufNewFile *makefil*,sources,sources.inc set filetype=make expandtab
 
 execute pathogen#infect()

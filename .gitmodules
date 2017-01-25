@@ -1,3 +1,6 @@
 [submodule "vimfiles/bundle/typescript-vim"]
 	path = vimfiles/bundle/typescript-vim
 	url = https://github.com/leafgarland/typescript-vim.git
+[submodule "vimfiles/bundle/rust.vim"]
+	path = vimfiles/bundle/rust.vim
+	url = https://github.com/rust-lang/rust.vim.git

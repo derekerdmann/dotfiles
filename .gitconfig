@@ -1,14 +1,14 @@
 [user]
-	name = Derek Erdmann
-	email = derek@derekerdmann.com
+    name = Derek Erdmann
+    email = derek@derekerdmann.com
 [alias]
     st = status
     glog = log --pretty=format:'%C(yellow)%h%Creset%C(green)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --graph
     com = commit    
     last = log -1
 [core]
-	editor = gvim
+    editor = gvim
 [color]
-	ui = true
+    ui = true
 [push]
-	default = upstream
+    default = upstream

@@ -8,6 +8,7 @@
     brel = log --all --decorate --oneline --graph --simplify-by-decoration --first-parent
     com = commit    
     last = log -1
+    chardiff = diff --word-diff-regex=.
 [core]
     editor = gvim
 [color]

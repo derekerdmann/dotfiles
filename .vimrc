@@ -25,6 +25,10 @@ nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 " Use global file for swap instead of working dir
 set dir=$USERPROFILE/vimtemp,.
 
+" Highlight current line and column
+set cursorline
+set cursorcolumn
+
 autocmd FileType markdown set nofoldenable
 autocmd FileType ruby setlocal shiftwidth=2 tabstop=2
 autocmd FileType eruby setlocal shiftwidth=2 tabstop=2

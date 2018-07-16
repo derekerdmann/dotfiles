@@ -14,7 +14,11 @@ set ignorecase
 " color gutter after 80 chars
 set cc=81
 
+if has("win32")
 set clipboard=unnamed
+else
+set clipboard=unnamedplus
+endif
 
 set backspace=indent,eol,start
 

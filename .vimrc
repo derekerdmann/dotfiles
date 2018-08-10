@@ -34,6 +34,8 @@ set cursorline
 set cursorcolumn
 
 autocmd FileType markdown set nofoldenable
+let g:markdown_fenced_languages = ['html', 'python', 'bash=sh', 'xml', 'cpp', 'c']
+
 autocmd FileType ruby setlocal shiftwidth=2 tabstop=2
 autocmd FileType eruby setlocal shiftwidth=2 tabstop=2
 autocmd FileType haml setlocal shiftwidth=2 tabstop=2

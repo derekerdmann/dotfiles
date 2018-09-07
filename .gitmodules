@@ -7,3 +7,6 @@
 [submodule "vimfiles/bundle/vim-csharp"]
 	path = vimfiles/bundle/vim-csharp
 	url = https://github.com/OrangeT/vim-csharp.git
+[submodule "vimfiles/pack/tpope/start/vim-sleuth"]
+	path = vimfiles/pack/tpope/start/vim-sleuth
+	url = https://github.com/tpope/vim-sleuth.git

@@ -34,7 +34,7 @@ set cursorline
 set cursorcolumn
 
 autocmd FileType markdown set nofoldenable
-let g:markdown_fenced_languages = ['html', 'python', 'bash=sh', 'xml', 'cpp', 'c']
+let g:markdown_fenced_languages = ['html', 'python', 'bash=sh', 'xml', 'cpp', 'c', 'json', 'diff']
 
 autocmd FileType ruby setlocal shiftwidth=2 tabstop=2
 autocmd FileType eruby setlocal shiftwidth=2 tabstop=2
@@ -55,6 +55,5 @@ autocmd BufRead,BufNewFile *.coffee set filetype=coffee
 autocmd BufRead,BufNewFile *.kml set filetype=xml
 autocmd BufRead,BufNewFile *.frag,*.vert,*.fp,*.vp,*.glsl set filetype=glsl 
 autocmd BufRead,BufNewFile *.xaml,*.resw,*.dui,*.man set filetype=xml
-autocmd BufRead,BufNewFile *makefil*,sources,sources.inc set filetype=make expandtab
 
 execute pathogen#infect()

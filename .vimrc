@@ -45,8 +45,10 @@ autocmd FileType coffee setlocal shiftwidth=2 tabstop=2
 
 autocmd FileType tex set spell
 autocmd FileType markdown set spell
+autocmd FileType markdown setlocal shiftwidth=4 tabstop=4
 
 autocmd FileType gitcommit set textwidth=72
+autocmd FileType gitcommit let g:nerdtree_tabs_open_on_gui_startup=0
 
 autocmd BufRead,BufNewFile *.prolog set filetype=prolog
 autocmd BufRead,BufNewFile *.als set filetype=alloy4
@@ -55,5 +57,12 @@ autocmd BufRead,BufNewFile *.coffee set filetype=coffee
 autocmd BufRead,BufNewFile *.kml set filetype=xml
 autocmd BufRead,BufNewFile *.frag,*.vert,*.fp,*.vp,*.glsl set filetype=glsl 
 autocmd BufRead,BufNewFile *.xaml,*.resw,*.dui,*.man set filetype=xml
+
+let g:nerdtree_tabs_focus_on_files=1
+let NERDTreeMinimalUI = 1
+let NERDTreeDirArrows = 1
+
+" Don't open nerdtree for piped stdin
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | let g:nerdtree_tabs_open_on_gui_startup=0 | endif
 
 execute pathogen#infect()

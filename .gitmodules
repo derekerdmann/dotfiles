@@ -10,3 +10,6 @@
 [submodule "vimfiles/pack/tpope/start/vim-sleuth"]
 	path = vimfiles/pack/tpope/start/vim-sleuth
 	url = https://github.com/tpope/vim-sleuth.git
+[submodule "vimfiles/nerdtree"]
+	path = vimfiles/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git

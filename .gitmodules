@@ -13,3 +13,6 @@
 [submodule "vimfiles/nerdtree"]
 	path = vimfiles/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
+[submodule "vimfiles/bundle/vim-nerdtree-tabs"]
+	path = vimfiles/bundle/vim-nerdtree-tabs
+	url = https://github.com/jistr/vim-nerdtree-tabs.git

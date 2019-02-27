@@ -16,3 +16,6 @@
 [submodule "vimfiles/bundle/vim-nerdtree-tabs"]
 	path = vimfiles/bundle/vim-nerdtree-tabs
 	url = https://github.com/jistr/vim-nerdtree-tabs.git
+[submodule "vimfiles/bundle/ctrlp.vim"]
+	path = vimfiles/bundle/ctrlp.vim
+	url = https://github.com/kien/ctrlp.vim

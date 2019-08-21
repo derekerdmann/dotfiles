@@ -27,7 +27,11 @@ set hlsearch
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
 " Use global file for swap instead of working dir
+if has("win32")
 set dir=$USERPROFILE/vimtemp,.
+else
+set dir=~/.vimtemp,.
+endif
 
 " Highlight current line and column
 set cursorline
@@ -58,11 +62,25 @@ autocmd BufRead,BufNewFile *.kml set filetype=xml
 autocmd BufRead,BufNewFile *.frag,*.vert,*.fp,*.vp,*.glsl set filetype=glsl 
 autocmd BufRead,BufNewFile *.xaml,*.resw,*.dui,*.man set filetype=xml
 
+autocmd FileType text let g:nerdtree_tabs_open_on_gui_startup=0
+
+" Remove object files from file globs
+set wildignore+=*.o
+
 let g:nerdtree_tabs_focus_on_files=1
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
+let NERDTreeIgnore = ['-debug$', '-release$', '-asan$', 'make\.out\.*', '\.apk$']
 
+" Don't open nerdtree
+let g:nerdtree_tabs_open_on_gui_startup=0
+autocmd FileType markdown let g:nerdtree_tabs_open_on_gui_startup=1
 " Don't open nerdtree for piped stdin
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | let g:nerdtree_tabs_open_on_gui_startup=0 | endif
+"autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | let g:nerdtree_tabs_open_on_gui_startup=0 | endif
+
+" Toggle nerdtree with F7
+nmap <F7> :NERDTreeTabsToggle<CR>
+" Toggle tagbar with F8
+nmap <F8> :TagbarToggle<CR>
 
 execute pathogen#infect()

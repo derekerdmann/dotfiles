@@ -10,8 +10,8 @@
 [submodule "vimfiles/pack/tpope/start/vim-sleuth"]
 	path = vimfiles/pack/tpope/start/vim-sleuth
 	url = https://github.com/tpope/vim-sleuth.git
-[submodule "vimfiles/nerdtree"]
-	path = vimfiles/nerdtree
+[submodule "vimfiles/bundle/nerdtree"]
+	path = vimfiles/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
 [submodule "vimfiles/bundle/vim-nerdtree-tabs"]
 	path = vimfiles/bundle/vim-nerdtree-tabs
@@ -25,3 +25,6 @@
 [submodule "vimfiles/bundle/plantuml-syntax"]
 	path = vimfiles/bundle/plantuml-syntax
 	url = https://github.com/aklt/plantuml-syntax.git
+[submodule "vimfiles/bundle/tagbar"]
+	path = vimfiles/bundle/tagbar
+	url = https://github.com/majutsushi/tagbar

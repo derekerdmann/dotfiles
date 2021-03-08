@@ -28,3 +28,6 @@
 [submodule "vimfiles/bundle/tagbar"]
 	path = vimfiles/bundle/tagbar
 	url = https://github.com/majutsushi/tagbar
+[submodule "vimfiles/nerdtree"]
+	path = vimfiles/nerdtree
+	url = https://github.com/preservim/nerdtree

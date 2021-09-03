@@ -9,6 +9,9 @@
     com = commit    
     last = log -1
     chardiff = diff --word-diff-regex=.
+    # https://www.atlassian.com/blog/git/advanced-git-aliases
+    # Graph log of commits in $1 that are not in $2
+    glog-diff = "!f() { git glog $1 ^$2; }; f"
 [core]
     editor = gvim
 [color]

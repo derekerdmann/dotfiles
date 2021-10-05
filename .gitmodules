@@ -31,3 +31,6 @@
 [submodule "vimfiles/nerdtree"]
 	path = vimfiles/nerdtree
 	url = https://github.com/preservim/nerdtree
+[submodule "vimfiles/bundle/DoxygenToolkit.vim"]
+	path = vimfiles/bundle/DoxygenToolkit.vim
+	url = git@github.com:vim-scripts/DoxygenToolkit.vim.git

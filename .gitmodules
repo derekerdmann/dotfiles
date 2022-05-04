@@ -34,3 +34,6 @@
 [submodule "vimfiles/bundle/DoxygenToolkit.vim"]
 	path = vimfiles/bundle/DoxygenToolkit.vim
 	url = git@github.com:vim-scripts/DoxygenToolkit.vim.git
+[submodule "vimfiles/bundle/vim-bitbake"]
+	path = vimfiles/bundle/vim-bitbake
+	url = git@github.com:kergoth/vim-bitbake.git

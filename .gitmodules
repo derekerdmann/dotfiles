@@ -37,6 +37,3 @@
 [submodule "vimfiles/bundle/vim-bitbake"]
 	path = vimfiles/bundle/vim-bitbake
 	url = git@github.com:kergoth/vim-bitbake.git
-[submodule "vimfiles/bundle/git-blame.vim"]
-	path = vimfiles/bundle/git-blame.vim
-	url = git@github.com:zivyangll/git-blame.vim.git

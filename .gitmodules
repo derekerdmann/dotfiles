@@ -18,7 +18,7 @@
 	url = https://github.com/jistr/vim-nerdtree-tabs.git
 [submodule "vimfiles/bundle/ctrlp.vim"]
 	path = vimfiles/bundle/ctrlp.vim
-	url = https://github.com/kien/ctrlp.vim
+	url = https://github.com/ctrlpvim/ctrlp.vim
 [submodule "vimfiles/bundle/vim-slumlord"]
 	path = vimfiles/bundle/vim-slumlord
 	url = https://github.com/scrooloose/vim-slumlord.git

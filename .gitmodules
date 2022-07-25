@@ -27,10 +27,10 @@
 	url = https://github.com/aklt/plantuml-syntax.git
 [submodule "vimfiles/bundle/tagbar"]
 	path = vimfiles/bundle/tagbar
-	url = https://github.com/majutsushi/tagbar
+	url = https://github.com/preservim/tagbar.git
 [submodule "vimfiles/nerdtree"]
 	path = vimfiles/nerdtree
-	url = https://github.com/preservim/nerdtree
+	url = https://github.com/preservim/nerdtree.git
 [submodule "vimfiles/bundle/DoxygenToolkit.vim"]
 	path = vimfiles/bundle/DoxygenToolkit.vim
 	url = git@github.com:vim-scripts/DoxygenToolkit.vim.git

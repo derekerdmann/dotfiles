@@ -12,6 +12,8 @@
     # https://www.atlassian.com/blog/git/advanced-git-aliases
     # Graph log of commits in $1 that are not in $2
     glog-diff = "!f() { git glog $1 ^$2; }; f"
+    # List files changed in branch $2 relative to the merge base of $1 and $2
+    changed-files = "!f() { git diff --name-only --relative $(git merge-base $2 $1) $2; }; f"
 [core]
     editor = gvim
 [color]

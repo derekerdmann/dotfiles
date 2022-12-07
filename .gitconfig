@@ -15,8 +15,13 @@
     # List files changed in branch $2 relative to the merge base of $1 and $2
     changed-files = "!f() { git diff --name-only --relative $(git merge-base $2 $1) $2; }; f"
 [core]
-    editor = gvim
+    editor = gvim -f
 [color]
     ui = true
 [push]
     default = upstream
+[merge]
+    conflictstyle = diff3
+[diff]
+    colorMoved = default
+    colorMovedW = allow-indentation-change

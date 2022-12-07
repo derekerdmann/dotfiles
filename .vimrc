@@ -36,6 +36,10 @@ endif
 " Highlight current line and column
 set cursorline
 set cursorcolumn
+"
+" Disable vimdiff folding
+set nofoldenable
+let g:vim_markdown_folding_disabled=1
 
 autocmd FileType markdown set nofoldenable
 let g:markdown_fenced_languages = ['html', 'python', 'bash=sh', 'xml', 'cpp', 'c', 'json', 'diff', 'plantuml']
@@ -50,6 +54,7 @@ autocmd FileType coffee setlocal shiftwidth=2 tabstop=2
 autocmd FileType tex set spell
 autocmd FileType markdown set spell
 autocmd FileType markdown setlocal shiftwidth=4 tabstop=4
+autocmd FileType markdown set textwidth=80
 
 autocmd FileType gitcommit set textwidth=72
 autocmd FileType gitcommit let g:nerdtree_tabs_open_on_gui_startup=0
@@ -61,6 +66,7 @@ autocmd BufRead,BufNewFile *.coffee set filetype=coffee
 autocmd BufRead,BufNewFile *.kml set filetype=xml
 autocmd BufRead,BufNewFile *.frag,*.vert,*.fp,*.vp,*.glsl set filetype=glsl 
 autocmd BufRead,BufNewFile *.xaml,*.resw,*.dui,*.man set filetype=xml
+autocmd BufRead,BufNewFile *.gyp,*.gypi set filetype=conf
 
 autocmd FileType text let g:nerdtree_tabs_open_on_gui_startup=0
 
@@ -70,17 +76,20 @@ set wildignore+=*.o
 let g:nerdtree_tabs_focus_on_files=1
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
-let NERDTreeIgnore = ['-debug$', '-release$', '-asan$', 'make\.out\.*', '\.apk$']
+let NERDTreeIgnore = ['-debug$', '-release$', '-asan$', '-tsan$', 'make\.out\.*', '\.apk$', 'build-*', 'build']
 
 " Don't open nerdtree
 let g:nerdtree_tabs_open_on_gui_startup=0
 autocmd FileType markdown let g:nerdtree_tabs_open_on_gui_startup=1
-" Don't open nerdtree for piped stdin
-"autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | let g:nerdtree_tabs_open_on_gui_startup=0 | endif
+
+" Don't prefill a new bitbake file
+let g:bb_create_on_empty=0
 
 " Toggle nerdtree with F7
 nmap <F7> :NERDTreeTabsToggle<CR>
 " Toggle tagbar with F8
 nmap <F8> :TagbarToggle<CR>
+
+let g:ctrlp_working_path_mode = 'rw'
 
 execute pathogen#infect()

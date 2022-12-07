@@ -20,6 +20,8 @@
     ui = true
 [push]
     default = upstream
+[http]
+    cookiefile = .gitcookies
 [merge]
     conflictstyle = diff3
 [diff]

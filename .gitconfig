@@ -1,6 +1,8 @@
 [user]
     name = Derek Erdmann
     email = derek@derekerdmann.com
+[include]
+    path = .gitconfig_sonos
 [alias]
     st = status
     glog = log --decorate --oneline --graph

@@ -43,3 +43,6 @@
 [submodule "oh-my-zsh-custom/themes/ohmyzsh-theme-passion"]
 	path = oh-my-zsh-custom/themes/ohmyzsh-theme-passion
 	url = git@github.com:ChesterYue/ohmyzsh-theme-passion.git
+[submodule "oh-my-zsh-custom/themes/headline"]
+	path = oh-my-zsh-custom/themes/headline
+	url = git@github.com:Moarram/headline.git

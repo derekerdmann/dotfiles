@@ -14,7 +14,7 @@ set ignorecase
 " color gutter after 80 chars
 set cc=81
 
-if has("win32")
+if has("win32") || has("osx")
 set clipboard=unnamed
 else
 set clipboard=unnamedplus

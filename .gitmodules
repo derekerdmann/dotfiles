@@ -46,3 +46,15 @@
 [submodule "oh-my-zsh-custom/themes/headline"]
 	path = oh-my-zsh-custom/themes/headline
 	url = git@github.com:Moarram/headline.git
+[submodule "oh-my-zsh-custom/plugins/schroot.plugin.zsh"]
+	path = oh-my-zsh-custom/plugins/schroot
+	url = git@github.com:fshp/schroot.plugin.zsh.git
+[submodule "vimfiles/pack/airblade/start/vim-gitgutter"]
+	path = vimfiles/pack/airblade/start/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git
+[submodule "vimfiles/pack/rhysd/start/wallaby.vim"]
+	path = vimfiles/pack/rhysd/start/wallaby.vim
+	url = https://github.com/rhysd/wallaby.vim.git
+[submodule "oh-my-zsh-custom/themes/powerlevel10k"]
+	path = oh-my-zsh-custom/themes/powerlevel10k
+	url = https://github.com/romkatv/powerlevel10k.git

@@ -26,4 +26,11 @@
     conflictstyle = diff3
 [diff]
     colorMoved = default
-    colorMovedW = allow-indentation-change
+    colorMovedWS = allow-indentation-change
+[init]
+	defaultBranch = main
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

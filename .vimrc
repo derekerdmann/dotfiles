@@ -1,4 +1,5 @@
 syntax on
+colorscheme wallaby
 
 set enc=utf-8
 
@@ -11,8 +12,6 @@ set expandtab
 
 set number
 set ignorecase
-" color gutter after 80 chars
-set cc=81
 
 if has("win32")
 set clipboard=unnamed
@@ -42,7 +41,7 @@ set nofoldenable
 let g:vim_markdown_folding_disabled=1
 
 autocmd FileType markdown set nofoldenable
-let g:markdown_fenced_languages = ['html', 'python', 'bash=sh', 'xml', 'cpp', 'c', 'json', 'diff', 'plantuml']
+let g:markdown_fenced_languages = ['html', 'python', 'bash=sh', 'xml', 'cpp', 'c', 'json', 'diff', 'plantuml', 'bitbake', 'kotlin', 'swift']
 
 autocmd FileType ruby setlocal shiftwidth=2 tabstop=2
 autocmd FileType eruby setlocal shiftwidth=2 tabstop=2
@@ -67,6 +66,7 @@ autocmd BufRead,BufNewFile *.kml set filetype=xml
 autocmd BufRead,BufNewFile *.frag,*.vert,*.fp,*.vp,*.glsl set filetype=glsl 
 autocmd BufRead,BufNewFile *.xaml,*.resw,*.dui,*.man set filetype=xml
 autocmd BufRead,BufNewFile *.gyp,*.gypi set filetype=conf
+autocmd BufRead,BufNewFile *.inc set filetype=c
 
 autocmd FileType text let g:nerdtree_tabs_open_on_gui_startup=0
 
@@ -91,5 +91,21 @@ nmap <F7> :NERDTreeTabsToggle<CR>
 nmap <F8> :TagbarToggle<CR>
 
 let g:ctrlp_working_path_mode = 'rw'
+
+" vim-airline options
+let g:airline_powerline_fonts = 1
+
+" vim-gitgutter options
+" Enable faster updates
+set updatetime=100
+highlight! link SignColumn LineNr
+let g:gitgutter_set_sign_backgrounds = 1
+"highlight! GitGutterAdd ctermfg=192 cterm=none guifg=#cae982 guibg=#080808 gui=none
+"highlight! GitGutterChange ctermfg=228 cterm=none guifg=#eae788 guibg=#080808 gui=none
+"highlight! GitGutterDelete ctermfg=173 cterm=none guifg=#e5786d guibg=#080808 gui=none
+
+highlight! link GitGutterAdd Identifier
+highlight! link GitGutterChange Special
+highlight! link GitGutterDelete Constant
 
 execute pathogen#infect()

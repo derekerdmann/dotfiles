@@ -24,7 +24,7 @@
 [push]
     default = upstream
 [http]
-    cookiefile = .gitcookies
+    cookiefile = ~/.gitcookies
 [merge]
     conflictstyle = diff3
 [diff]

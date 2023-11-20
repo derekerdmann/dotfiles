@@ -28,9 +28,6 @@
 [submodule "vimfiles/bundle/tagbar"]
 	path = vimfiles/pack/plugins/start/tagbar
 	url = https://github.com/preservim/tagbar.git
-[submodule "vimfiles/nerdtree"]
-	path = vimfiles/nerdtree
-	url = https://github.com/preservim/nerdtree.git
 [submodule "vimfiles/bundle/DoxygenToolkit.vim"]
 	path = vimfiles/pack/plugins/start/DoxygenToolkit.vim
 	url = git@github.com:vim-scripts/DoxygenToolkit.vim.git

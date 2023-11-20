@@ -1,44 +1,44 @@
 [submodule "vimfiles/bundle/typescript-vim"]
-	path = vimfiles/bundle/typescript-vim
+	path = vimfiles/pack/typescript/start/typescript-vim
 	url = https://github.com/leafgarland/typescript-vim.git
 [submodule "vimfiles/bundle/rust.vim"]
-	path = vimfiles/bundle/rust.vim
+	path = vimfiles/pack/plugins/start/rust.vim
 	url = https://github.com/rust-lang/rust.vim.git
 [submodule "vimfiles/bundle/vim-csharp"]
-	path = vimfiles/bundle/vim-csharp
+	path = vimfiles/pack/plugins/start/vim-csharp
 	url = https://github.com/OrangeT/vim-csharp.git
 [submodule "vimfiles/pack/tpope/start/vim-sleuth"]
 	path = vimfiles/pack/tpope/start/vim-sleuth
 	url = https://github.com/tpope/vim-sleuth.git
 [submodule "vimfiles/bundle/nerdtree"]
-	path = vimfiles/bundle/nerdtree
+	path = vimfiles/pack/plugins/start/nerdtree
 	url = https://github.com/preservim/nerdtree.git
 [submodule "vimfiles/bundle/vim-nerdtree-tabs"]
-	path = vimfiles/bundle/vim-nerdtree-tabs
+	path = vimfiles/pack/plugins/start/vim-nerdtree-tabs
 	url = https://github.com/jistr/vim-nerdtree-tabs.git
 [submodule "vimfiles/bundle/ctrlp.vim"]
-	path = vimfiles/bundle/ctrlp.vim
+	path = vimfiles/pack/plugins/start/ctrlp.vim
 	url = https://github.com/ctrlpvim/ctrlp.vim
 [submodule "vimfiles/bundle/vim-slumlord"]
-	path = vimfiles/bundle/vim-slumlord
+	path = vimfiles/pack/plugins/start/vim-slumlord
 	url = https://github.com/scrooloose/vim-slumlord.git
 [submodule "vimfiles/bundle/plantuml-syntax"]
-	path = vimfiles/bundle/plantuml-syntax
+	path = vimfiles/pack/plugins/start/plantuml-syntax
 	url = https://github.com/aklt/plantuml-syntax.git
 [submodule "vimfiles/bundle/tagbar"]
-	path = vimfiles/bundle/tagbar
+	path = vimfiles/pack/plugins/start/tagbar
 	url = https://github.com/preservim/tagbar.git
 [submodule "vimfiles/nerdtree"]
 	path = vimfiles/nerdtree
 	url = https://github.com/preservim/nerdtree.git
 [submodule "vimfiles/bundle/DoxygenToolkit.vim"]
-	path = vimfiles/bundle/DoxygenToolkit.vim
+	path = vimfiles/pack/plugins/start/DoxygenToolkit.vim
 	url = git@github.com:vim-scripts/DoxygenToolkit.vim.git
 [submodule "vimfiles/bundle/vim-bitbake"]
-	path = vimfiles/bundle/vim-bitbake
+	path = vimfiles/pack/plugins/start/vim-bitbake
 	url = git@github.com:kergoth/vim-bitbake.git
 [submodule "vimfiles/bundle/vim-fugitive"]
-	path = vimfiles/bundle/vim-fugitive
+	path = vimfiles/pack/tpope/start/vim-fugitive
 	url = git@github.com:tpope/vim-fugitive.git
 [submodule "oh-my-zsh-custom/themes/ohmyzsh-theme-passion"]
 	path = oh-my-zsh-custom/themes/ohmyzsh-theme-passion

@@ -1,5 +1,6 @@
 syntax on
 colorscheme wallaby
+let g:airline_theme='wombat'
 
 set enc=utf-8
 

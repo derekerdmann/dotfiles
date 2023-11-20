@@ -64,3 +64,6 @@
 [submodule "vimfiles/pack/dist/start/vim-airline"]
 	path = vimfiles/pack/dist/start/vim-airline
 	url = http://github.com/vim-airline/vim-airline.git
+[submodule "vimfiles/pack/sheerun/start/vim-wombat-scheme"]
+	path = vimfiles/pack/sheerun/start/vim-wombat-scheme
+	url = https://github.com/sheerun/vim-wombat-scheme.git

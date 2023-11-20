@@ -13,7 +13,7 @@ set expandtab
 set number
 set ignorecase
 
-if has("win32")
+if has("win32") || has("osx")
 set clipboard=unnamed
 else
 set clipboard=unnamedplus

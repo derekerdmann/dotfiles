@@ -12,6 +12,8 @@ set expandtab
 
 set number
 set ignorecase
+" color column after textwidth
+set colorcolumn=+1
 
 if has("win32") || has("osx")
 set clipboard=unnamed

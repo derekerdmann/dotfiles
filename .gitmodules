@@ -61,3 +61,6 @@
 [submodule "vimfiles/pack/plugins/start/kotlin-vim"]
 	path = vimfiles/pack/plugins/start/kotlin-vim
 	url = https://github.com/udalov/kotlin-vim.git
+[submodule "vimfiles/pack/dist/start/vim-airline"]
+	path = vimfiles/pack/dist/start/vim-airline
+	url = http://github.com/vim-airline/vim-airline.git

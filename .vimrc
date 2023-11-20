@@ -44,7 +44,7 @@ set nofoldenable
 let g:vim_markdown_folding_disabled=1
 
 autocmd FileType markdown set nofoldenable
-let g:markdown_fenced_languages = ['html', 'python', 'bash=sh', 'xml', 'cpp', 'c', 'json', 'diff', 'plantuml', 'bitbake', 'kotlin', 'swift']
+let g:markdown_fenced_languages = ['html', 'python', 'bash=sh', 'xml', 'cpp', 'c', 'json', 'diff', 'plantuml', 'bitbake', 'kotlin', 'swift',  'cmake', 'meson']
 
 autocmd FileType ruby setlocal shiftwidth=2 tabstop=2
 autocmd FileType eruby setlocal shiftwidth=2 tabstop=2

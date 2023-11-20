@@ -18,6 +18,7 @@
     changed-files = "!f() { git diff --name-only --relative $(git merge-base $2 $1) $2; }; f"
 [core]
     editor = gvim -f
+    pager = less -FX
 [color]
     ui = true
 [push]
@@ -30,9 +31,9 @@
     colorMoved = default
     colorMovedWS = allow-indentation-change
 [init]
-	defaultBranch = main
+    defaultBranch = main
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true

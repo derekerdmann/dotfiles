@@ -74,7 +74,7 @@ set wildignore+=*.o
 let g:nerdtree_tabs_focus_on_files=1
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
-let NERDTreeIgnore = ['-debug$', '-release$', '-asan$', '-tsan$', 'make\.out\.*', '\.apk$', 'build-*', 'build']
+let NERDTreeIgnore = ['-debug$', '-release$', '-asan$', '-tsan$', 'make\.out\.*', '\.apk$', '^build-*', '^build$']
 
 " Don't open nerdtree
 let g:nerdtree_tabs_open_on_gui_startup=0

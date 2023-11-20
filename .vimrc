@@ -107,5 +107,3 @@ let g:gitgutter_set_sign_backgrounds = 1
 highlight! link GitGutterAdd Identifier
 highlight! link GitGutterChange Special
 highlight! link GitGutterDelete Constant
-
-execute pathogen#infect()

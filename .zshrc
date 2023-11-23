@@ -77,7 +77,14 @@ ZSH_CUSTOM="$HOME/dotfiles/oh-my-zsh-custom"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git schroot)
+plugins=(
+  git
+  schroot
+  copyfile
+  copypath
+  jenv
+  gradle
+)
 
 source $ZSH/oh-my-zsh.sh
 

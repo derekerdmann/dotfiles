@@ -92,6 +92,7 @@ let g:ctrlp_working_path_mode = 'rw'
 
 " vim-airline options
 let g:airline_powerline_fonts = 1
+let g:airline#extensions#ale#enabled = 1
 
 " vim-gitgutter options
 " Enable faster updates

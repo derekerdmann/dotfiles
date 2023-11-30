@@ -73,3 +73,6 @@
 [submodule "vimfiles/pack/plugins/start/vim-android"]
 	path = vimfiles/pack/plugins/start/vim-android
 	url = https://github.com/hsanson/vim-android.git
+[submodule "vimfiles/pack/plugins/start/swift.vim"]
+	path = vimfiles/pack/plugins/start/swift.vim
+	url = https://github.com/keith/swift.vim.git

@@ -108,3 +108,11 @@ let g:gitgutter_set_sign_backgrounds = 1
 highlight! link GitGutterAdd Identifier
 highlight! link GitGutterChange Special
 highlight! link GitGutterDelete Constant
+
+" If installed, add GNU LilyPond Vim plugins from distribution
+if executable('lilypond')
+    filetype off
+    let &runtimepath .= ',' . escape(trim(system('lilypond -e  "(display (ly:get-option ''datadir)) (exit)"')) . "/vim", '\,')
+    filetype on
+    syntax on
+endif

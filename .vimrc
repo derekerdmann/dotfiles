@@ -89,6 +89,8 @@ nmap <F7> :NERDTreeTabsToggle<CR>
 nmap <F8> :TagbarToggle<CR>
 
 let g:ctrlp_working_path_mode = 'rw'
+let g:ctrlp_show_hidden = 1
+let g:ctrlp_user_command = ['.git', 'git -C %s ls-files -oc --exclude-standard']
 
 " vim-airline options
 let g:airline_powerline_fonts = 1

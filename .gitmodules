@@ -76,3 +76,6 @@
 [submodule "vimfiles/pack/plugins/start/swift.vim"]
 	path = vimfiles/pack/plugins/start/swift.vim
 	url = https://github.com/keith/swift.vim.git
+[submodule "vimfiles/pack/plugins/start/vimtex"]
+	path = vimfiles/pack/plugins/start/vimtex
+	url = https://github.com/lervag/vimtex.git

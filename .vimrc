@@ -117,3 +117,7 @@ if executable('lilypond')
     filetype on
     syntax on
 endif
+
+# Enable omnicomplete
+filetype plugin on
+set omnifunc=syntaxcomplete#Complete

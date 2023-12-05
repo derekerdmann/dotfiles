@@ -118,6 +118,6 @@ if executable('lilypond')
     syntax on
 endif
 
-# Enable omnicomplete
+" Enable omnicomplete
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete

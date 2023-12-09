@@ -118,6 +118,27 @@ if executable('lilypond')
     syntax on
 endif
 
+function! LyFormat(buffer) abort
+    let commands = ['indent', 'reformat', 'simplify-accidentals']
+
+    let options = {
+        \ 'indent-width': &shiftwidth,
+        \ 'encoding': &fileencoding,
+        \ }
+    let variables = join(values(map(copy(options), '"-d "..v:key.."="..v:val')))
+
+    return {
+        \ 'command': 'ly "' .. join(commands, ';') .. '" ' .. variables
+        \ }
+endfunction
+
+" Configure ALE fixer for Lilypond files
+let g:ale_fixers = {
+  \   'lilypond': [
+  \       'LyFormat'
+  \   ],
+  \}
+
 " Enable omnicomplete
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete

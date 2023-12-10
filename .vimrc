@@ -116,6 +116,13 @@ if executable('lilypond')
     let &runtimepath .= ',' . escape(trim(system('lilypond -e  "(display (ly:get-option ''datadir)) (exit)"')) . "/vim", '\,')
     filetype on
     syntax on
+
+    " Override PDF viewer to Skim if installed, otherwise default app
+    if has('osx') && !empty(trim(system('mdfind -name "kMDItemFSName==Skim.app"')))
+        noremap <buffer> <F6> :silent !open -a Skim.app "%<.pdf"<Return>
+    elseif has('osx')
+        noremap <buffer> <F6> :silent !open "%<.pdf"<Return>
+    endif
 endif
 
 function! LyFormat(buffer) abort

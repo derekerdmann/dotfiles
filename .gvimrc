@@ -15,4 +15,4 @@ set novisualbell
 map <MiddleMouse> <Nop>
 imap <MiddleMouse> <Nop>
 
-set lines=70 columns=130
+set lines=74 columns=140

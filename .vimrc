@@ -42,10 +42,6 @@ set cursorcolumn
 " Disable vimdiff folding
 set nofoldenable
 
-autocmd BufRead,BufNewFile *.prolog set filetype=prolog
-autocmd BufRead,BufNewFile *.kml set filetype=xml
-autocmd BufRead,BufNewFile *.gyp,*.gypi set filetype=conf
-
 " Remove object files from file globs
 set wildignore+=*.o
 

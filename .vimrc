@@ -42,12 +42,6 @@ set cursorcolumn
 " Disable vimdiff folding
 set nofoldenable
 
-autocmd FileType ruby setlocal shiftwidth=2 tabstop=2
-autocmd FileType eruby setlocal shiftwidth=2 tabstop=2
-autocmd FileType haml setlocal shiftwidth=2 tabstop=2
-autocmd FileType yaml setlocal shiftwidth=2 tabstop=2
-autocmd FileType cucumber setlocal shiftwidth=2 tabstop=2
-
 autocmd BufRead,BufNewFile *.prolog set filetype=prolog
 autocmd BufRead,BufNewFile *.kml set filetype=xml
 autocmd BufRead,BufNewFile *.gyp,*.gypi set filetype=conf

@@ -50,8 +50,6 @@ autocmd FileType cucumber setlocal shiftwidth=2 tabstop=2
 
 autocmd FileType tex set spell
 
-autocmd FileType gitcommit set textwidth=72
-
 autocmd BufRead,BufNewFile *.prolog set filetype=prolog
 autocmd BufRead,BufNewFile *.kml set filetype=xml
 autocmd BufRead,BufNewFile *.xaml,*.resw,*.dui,*.man set filetype=xml

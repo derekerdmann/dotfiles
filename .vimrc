@@ -41,10 +41,6 @@ set cursorcolumn
 "
 " Disable vimdiff folding
 set nofoldenable
-let g:vim_markdown_folding_disabled=1
-
-autocmd FileType markdown set nofoldenable
-let g:markdown_fenced_languages = ['html', 'python', 'bash=sh', 'xml', 'cpp', 'c', 'json', 'diff', 'plantuml', 'bitbake', 'kotlin', 'swift',  'cmake', 'meson']
 
 autocmd FileType ruby setlocal shiftwidth=2 tabstop=2
 autocmd FileType eruby setlocal shiftwidth=2 tabstop=2
@@ -53,20 +49,14 @@ autocmd FileType yaml setlocal shiftwidth=2 tabstop=2
 autocmd FileType cucumber setlocal shiftwidth=2 tabstop=2
 
 autocmd FileType tex set spell
-autocmd FileType markdown set spell
-autocmd FileType markdown setlocal shiftwidth=4 tabstop=4
-autocmd FileType markdown set textwidth=80
 
 autocmd FileType gitcommit set textwidth=72
-autocmd FileType gitcommit let g:nerdtree_tabs_open_on_gui_startup=0
 
 autocmd BufRead,BufNewFile *.prolog set filetype=prolog
 autocmd BufRead,BufNewFile *.kml set filetype=xml
 autocmd BufRead,BufNewFile *.xaml,*.resw,*.dui,*.man set filetype=xml
 autocmd BufRead,BufNewFile *.gyp,*.gypi set filetype=conf
 autocmd BufRead,BufNewFile *.inc set filetype=c
-
-autocmd FileType text let g:nerdtree_tabs_open_on_gui_startup=0
 
 " Remove object files from file globs
 set wildignore+=*.o
@@ -79,7 +69,6 @@ let NERDTreeIgnore = ['\.git$', '-debug$', '-release$', '-asan$', '-tsan$', 'mak
 
 " Don't open nerdtree
 let g:nerdtree_tabs_open_on_gui_startup=0
-autocmd FileType markdown let g:nerdtree_tabs_open_on_gui_startup=1
 
 " Don't prefill a new bitbake file
 let g:bb_create_on_empty=0

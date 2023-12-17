@@ -58,9 +58,6 @@ let NERDTreeIgnore = ['\.git$', '-debug$', '-release$', '-asan$', '-tsan$', 'mak
 " Don't open nerdtree
 let g:nerdtree_tabs_open_on_gui_startup=0
 
-" Don't prefill a new bitbake file
-let g:bb_create_on_empty=0
-
 " Toggle nerdtree with F7
 nmap <F7> :NERDTreeTabsToggle<CR>
 " Toggle tagbar with F8

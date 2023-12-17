@@ -50,9 +50,7 @@ autocmd FileType cucumber setlocal shiftwidth=2 tabstop=2
 
 autocmd BufRead,BufNewFile *.prolog set filetype=prolog
 autocmd BufRead,BufNewFile *.kml set filetype=xml
-autocmd BufRead,BufNewFile *.xaml,*.resw,*.dui,*.man set filetype=xml
 autocmd BufRead,BufNewFile *.gyp,*.gypi set filetype=conf
-autocmd BufRead,BufNewFile *.inc set filetype=c
 
 " Remove object files from file globs
 set wildignore+=*.o

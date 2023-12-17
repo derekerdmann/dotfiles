@@ -48,8 +48,6 @@ autocmd FileType haml setlocal shiftwidth=2 tabstop=2
 autocmd FileType yaml setlocal shiftwidth=2 tabstop=2
 autocmd FileType cucumber setlocal shiftwidth=2 tabstop=2
 
-autocmd FileType tex set spell
-
 autocmd BufRead,BufNewFile *.prolog set filetype=prolog
 autocmd BufRead,BufNewFile *.kml set filetype=xml
 autocmd BufRead,BufNewFile *.xaml,*.resw,*.dui,*.man set filetype=xml

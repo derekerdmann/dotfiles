@@ -91,3 +91,6 @@ endif
 " Enable omnicomplete
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
+
+" Enable Doxygen highlighting in supported languages
+let g:load_doxygen_syntax=1

@@ -94,3 +94,6 @@ set omnifunc=syntaxcomplete#Complete
 
 " Enable Doxygen highlighting in supported languages
 let g:load_doxygen_syntax=1
+
+" Only load requested linters
+let g:ale_linters_explicit = 1

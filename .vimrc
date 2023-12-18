@@ -1,4 +1,18 @@
 syntax on
+
+" Override Doxygen highlight colors to mostly look like regular comments. This
+" group will be applied every time a color scheme is sourced.
+augroup DoxygenOverride
+    autocmd!
+    autocmd ColorScheme * hi def link doxygenParamName Identifier
+        \ | hi def link doxygenBody Comment
+        \ | hi def link doxygenBrief Comment
+        \ | hi def link doxygenParam String
+        \ | hi def link doxygenSpecialHeading Comment
+        \ | hi def link doxygenSpecialOnelineDesc Comment
+        \ | hi def link doxygenSpecialTypeOnelineDesc Comment
+augroup END
+
 colorscheme wallaby
 let g:airline_theme='wombat'
 
@@ -93,7 +107,7 @@ filetype plugin on
 set omnifunc=syntaxcomplete#Complete
 
 " Enable Doxygen highlighting in supported languages
-let g:load_doxygen_syntax=1
+let g:load_doxygen_syntax = 1
 
 " Only load requested linters
 let g:ale_linters_explicit = 1

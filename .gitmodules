@@ -79,3 +79,6 @@
 [submodule "vimfiles/pack/plugins/start/vimtex"]
 	path = vimfiles/pack/plugins/start/vimtex
 	url = https://github.com/lervag/vimtex.git
+[submodule "vimfiles/pack/tpope/start/vim-rhubarb"]
+	path = vimfiles/pack/tpope/start/vim-rhubarb
+	url = https://github.com/tpope/vim-rhubarb.git

@@ -17,10 +17,10 @@ function! LyFormat(buffer) abort
         \ 'indent-width': &shiftwidth,
         \ 'encoding': &fileencoding,
         \ }
-    let variables = join(values(map(copy(options), '"-d "..v:key.."="..v:val')))
+    let variables = join(values(map(copy(options), '"-d ".v:key."=".v:val')))
 
     return {
-        \ 'command': 'ly "' .. join(commands, ';') .. '" ' .. variables
+        \ 'command': 'ly "' . join(commands, ';') . '" ' . variables
         \ }
 endfunction
 

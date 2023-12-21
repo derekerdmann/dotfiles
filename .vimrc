@@ -16,7 +16,7 @@ augroup END
 colorscheme wallaby
 let g:airline_theme='wombat'
 
-set enc=utf-8
+set encoding=utf-8
 
 set autoindent
 filetype indent plugin on
@@ -30,7 +30,7 @@ set ignorecase
 " color column after textwidth
 set colorcolumn=+1
 
-if has("win32") || has("osx")
+if has('win32') || has('osx')
 set clipboard=unnamed
 else
 set clipboard=unnamedplus
@@ -43,10 +43,10 @@ set hlsearch
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
 " Use global file for swap instead of working dir
-if has("win32")
-set dir=$USERPROFILE/vimtemp,.
+if has('win32')
+set directory=$USERPROFILE/vimtemp,.
 else
-set dir=~/.vimtemp,.
+set directory=~/.vimtemp,.
 endif
 
 " Highlight current line and column
@@ -97,7 +97,7 @@ highlight! link GitGutterDelete Constant
 " If installed, add GNU LilyPond Vim plugins from distribution
 if executable('lilypond')
     filetype off
-    let &runtimepath .= ',' . escape(trim(system('lilypond -e  "(display (ly:get-option ''datadir)) (exit)"')) . "/vim", '\,')
+    let &runtimepath .= ',' . escape(trim(system('lilypond -e  "(display (ly:get-option ''datadir)) (exit)"')) . '/vim', '\,')
     filetype on
     syntax on
 endif

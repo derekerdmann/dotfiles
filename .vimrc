@@ -114,3 +114,6 @@ let g:load_doxygen_syntax = 1
 
 " Only load requested linters
 let g:ale_linters_explicit = 1
+
+" Enable extended % matching
+packadd! matchit

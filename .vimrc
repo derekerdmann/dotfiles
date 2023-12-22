@@ -1,3 +1,6 @@
+" vint: next-line -ProhibitSetNoCompatible
+set nocompatible
+
 syntax on
 
 " Override Doxygen highlight colors to mostly look like regular comments. This

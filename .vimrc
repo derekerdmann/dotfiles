@@ -2,10 +2,8 @@ set encoding=utf-8
 set fileencoding=utf-8
 set termencoding=utf-8
 
-" vint: next-line -ProhibitSetNoCompatible
-set nocompatible
-
-syntax on
+unlet! skip_defaults_vim
+source $VIMRUNTIME/defaults.vim
 
 " Override Doxygen highlight colors to mostly look like regular comments. This
 " group will be applied every time a color scheme is sourced.
@@ -23,10 +21,7 @@ augroup END
 colorscheme wallaby
 let g:airline_theme='wombat'
 
-set encoding=utf-8
-
 set autoindent
-filetype indent plugin on
 
 set tabstop=4
 set shiftwidth=4
@@ -42,8 +37,6 @@ set clipboard=unnamed
 else
 set clipboard=unnamedplus
 endif
-
-set backspace=indent,eol,start
 
 " Search highlighting, press space to clear
 set hlsearch

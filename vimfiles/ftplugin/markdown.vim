@@ -22,5 +22,3 @@ let g:markdown_fenced_languages = [
     \ 'cmake',
     \ 'meson'
     \ ]
-
-let g:nerdtree_tabs_open_on_gui_startup=1

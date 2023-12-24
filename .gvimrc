@@ -3,7 +3,7 @@ set guioptions-=T
 set guioptions-=m
 
 if has("win32")
-set guifont=Consolas:h9:cANSI
+set guifont=Cascadia_Mono_PL:h9:cANSI
 elseif has("mac")
 set guifont=MesloLGS-NF-Regular:h10
 endif

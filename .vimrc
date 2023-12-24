@@ -66,17 +66,13 @@ set nofoldenable
 " Remove object files from file globs
 set wildignore+=*.o
 
-let g:nerdtree_tabs_focus_on_files=1
-let NERDTreeMinimalUI = 1
-let NERDTreeDirArrows = 1
-let NERDTreeShowHidden=1
-let NERDTreeIgnore = ['\.git$', '-debug$', '-release$', '-asan$', '-tsan$', 'make\.out\.*', '\.apk$', '^build-*', '^build$']
+" Show a tree-style netrw listing
+let g:netrw_liststyle = 3
+let g:netrw_winsize = 30
+let g:netrw_list_hide = netrw_gitignore#Hide()
 
-" Don't open nerdtree
-let g:nerdtree_tabs_open_on_gui_startup=0
-
-" Toggle nerdtree with F7
-nmap <F7> :NERDTreeTabsToggle<CR>
+" Toggle netrw with F7
+nmap <F7> :Lexplore<CR>
 " Toggle tagbar with F8
 nmap <F8> :TagbarToggle<CR>
 

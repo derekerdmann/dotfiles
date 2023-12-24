@@ -52,9 +52,6 @@ endif
 " Highlight current line and column
 set cursorline
 set cursorcolumn
-"
-" Disable vimdiff folding
-set nofoldenable
 
 " Remove object files from file globs
 set wildignore+=*.o

@@ -80,9 +80,6 @@ let g:airline#extensions#ale#enabled = 1
 set updatetime=100
 highlight! link SignColumn LineNr
 let g:gitgutter_set_sign_backgrounds = 1
-"highlight! GitGutterAdd ctermfg=192 cterm=none guifg=#cae982 guibg=#080808 gui=none
-"highlight! GitGutterChange ctermfg=228 cterm=none guifg=#eae788 guibg=#080808 gui=none
-"highlight! GitGutterDelete ctermfg=173 cterm=none guifg=#e5786d guibg=#080808 gui=none
 
 highlight! link GitGutterAdd Identifier
 highlight! link GitGutterChange Special

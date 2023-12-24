@@ -6,6 +6,8 @@ let b:ale_linters = [
 let b:ale_fixers = [
     \ 'remove_trailing_lines',
     \ 'trim_whitespace',
+    \ 'ruff',
+    \ 'ruff_format',
     \ ]
 
 let b:python_auto_pipenv = 1

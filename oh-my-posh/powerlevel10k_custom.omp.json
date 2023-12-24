@@ -22,6 +22,7 @@
           "background": "7",
           "foreground": "232",
           "style": "powerline",
+          "powerline_symbol": "\ue0b0",
           "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}} ",
           "type": "os"
         },
@@ -40,6 +41,7 @@
             "style": "full"
           },
           "style": "powerline",
+          "powerline_symbol": "\ue0b0",
           "template": "{{ .Path }} ",
           "type": "path"
         },

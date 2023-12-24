@@ -49,7 +49,7 @@ set backspace=indent,eol,start
 set hlsearch
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
-" Use global file for swap instead of working dir
+" Prefer user directory for swap instead of working dir
 if has('win32')
 set directory=$USERPROFILE/vimtemp,.
 else
@@ -67,6 +67,7 @@ set nofoldenable
 set wildignore+=*.o
 
 " Show a tree-style netrw listing
+let g:netrw_home = '~/.netrw'
 let g:netrw_liststyle = 3
 let g:netrw_winsize = 30
 let g:netrw_list_hide = netrw_gitignore#Hide()

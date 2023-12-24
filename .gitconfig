@@ -3,6 +3,7 @@
     email = derek@derekerdmann.com
 [include]
     path = .gitconfig_sonos
+    path = .gitconfig_windows
 [alias]
     st = status
     glog = log --decorate --oneline --graph

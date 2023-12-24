@@ -1,6 +1,7 @@
 let b:ale_linters = [
     \ 'ruff',
     \ 'pylint',
+    \ 'pylsp',
     \ ]
 
 let b:ale_fixers = [

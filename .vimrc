@@ -2,6 +2,12 @@ set encoding=utf-8
 set fileencoding=utf-8
 set termencoding=utf-8
 
+" If installed, add GNU LilyPond Vim plugins from distribution. Load before
+" syntax and filetype detection is enabled by defaults.vim.
+if executable('lilypond')
+    let &runtimepath .= ',' . escape(trim(system('lilypond -e  "(display (ly:get-option ''datadir)) (exit)"')) . '/vim', '\,')
+endif
+
 unlet! skip_defaults_vim
 source $VIMRUNTIME/defaults.vim
 
@@ -84,14 +90,6 @@ let g:gitgutter_set_sign_backgrounds = 1
 highlight! link GitGutterAdd Identifier
 highlight! link GitGutterChange Special
 highlight! link GitGutterDelete Constant
-
-" If installed, add GNU LilyPond Vim plugins from distribution
-if executable('lilypond')
-    filetype off
-    let &runtimepath .= ',' . escape(trim(system('lilypond -e  "(display (ly:get-option ''datadir)) (exit)"')) . '/vim', '\,')
-    filetype on
-    syntax on
-endif
 
 " Enable omnicomplete
 filetype plugin on

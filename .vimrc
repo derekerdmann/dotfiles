@@ -11,17 +11,36 @@ endif
 unlet! skip_defaults_vim
 source $VIMRUNTIME/defaults.vim
 
-" Override Doxygen highlight colors to mostly look like regular comments. This
-" group will be applied every time a color scheme is sourced.
-augroup DoxygenOverride
-    autocmd!
-    autocmd ColorScheme * hi def link doxygenParamName Identifier
-        \ | hi def link doxygenBody Comment
-        \ | hi def link doxygenBrief Comment
-        \ | hi def link doxygenParam String
-        \ | hi def link doxygenSpecialHeading Comment
-        \ | hi def link doxygenSpecialOnelineDesc Comment
-        \ | hi def link doxygenSpecialTypeOnelineDesc Comment
+function! OverrideHighlights() abort
+    " Override Doxygen highlight colors to mostly look like regular comments
+    highlight default link doxygenParamName Identifier
+    highlight default link doxygenBody Comment
+    highlight default link doxygenBrief Comment
+    highlight default link doxygenParam String
+    highlight default link doxygenSpecialHeading Comment
+    highlight default link doxygenSpecialOnelineDesc Comment
+    highlight default link doxygenSpecialTypeOnelineDesc Comment
+
+    " Highlight ALE error signs to match the error block
+    highlight default link ALEErrorSign SpellBad
+
+    " Use the error color in ALE virtual text
+    highlight default link ALEVirtualTextError WarningMsg
+
+    " Use the saturated yellow from the wombat airline theme's insert mode
+    " instead of SpellCaps for ALE warnings
+    highlight ALEWarning guifg=#141413 guibg=#fde76e ctermfg=232 ctermbg=203
+    highlight ALEVirtualTextWarning ctermfg=203 guifg=#fde76e
+    highlight default link ALEWarningSign ALEWarning
+
+    " Set add/change/delete sign colors
+    highlight GitGutterAdd guifg=#95e454 ctermfg=113
+    highlight GitGutterChange guifg=#fde76e ctermfg=3
+    highlight GitGutterDelete guifg=#e5786d ctermfg=1
+endfunction
+
+augroup OverrideColors
+    autocmd ColorScheme * call OverrideHighlights()
 augroup END
 
 colorscheme wallaby
@@ -87,9 +106,6 @@ set updatetime=100
 highlight! link SignColumn LineNr
 let g:gitgutter_set_sign_backgrounds = 1
 
-highlight! link GitGutterAdd Identifier
-highlight! link GitGutterChange Special
-highlight! link GitGutterDelete Constant
 
 " Enable omnicomplete
 filetype plugin on

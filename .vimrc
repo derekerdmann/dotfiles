@@ -2,8 +2,12 @@ set encoding=utf-8
 set fileencoding=utf-8
 set termencoding=utf-8
 
-" If installed, add GNU LilyPond Vim plugins from distribution. Load before
-" syntax and filetype detection is enabled by defaults.vim.
+" Add optional or external plugins before enabling syntax and filetype
+" detection in defaults.vim.
+
+packadd! matchit
+
+" If installed, add GNU LilyPond Vim plugins from distribution
 if executable('lilypond')
     let &runtimepath .= ',' . escape(trim(system('lilypond -e  "(display (ly:get-option ''datadir)) (exit)"')) . '/vim', '\,')
 endif
@@ -116,6 +120,3 @@ let g:load_doxygen_syntax = 1
 
 " Only load requested linters
 let g:ale_linters_explicit = 1
-
-" Enable extended % matching
-packadd! matchit

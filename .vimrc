@@ -80,6 +80,9 @@ nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 " Lowercase searches are case-insensitive
 set smartcase
 
+" File completion is case-insensitive
+set wildignorecase
+
 " Indentation defaults
 set autoindent
 set tabstop=4

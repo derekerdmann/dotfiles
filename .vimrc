@@ -83,6 +83,10 @@ set smartcase
 " File completion is case-insensitive
 set wildignorecase
 
+" Command-line completion shows matches in a popup menu
+set wildmenu
+set wildoptions=pum
+
 " Indentation defaults
 set autoindent
 set tabstop=4

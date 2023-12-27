@@ -119,7 +119,6 @@ let g:ctrlp_show_hidden = 1
 let g:ctrlp_user_command = ['.git', 'git -C %s ls-files -oc --exclude-standard']
 
 " Enable omnicomplete
-filetype plugin on
 set omnifunc=syntaxcomplete#Complete
 
 " Only load requested linters

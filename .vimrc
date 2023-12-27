@@ -88,16 +88,16 @@ set expandtab
 
 " Use the system clipboard for the default yank register
 if has('win32') || has('osx')
-set clipboard=unnamed
+    set clipboard=unnamed
 else
-set clipboard=unnamedplus
+    set clipboard=unnamedplus
 endif
 
 " Prefer user directory for swap instead of working dir
 if has('win32')
-set directory=$USERPROFILE/vimtemp,.
+    set directory=$USERPROFILE/vimtemp,.
 else
-set directory=~/.vimtemp,.
+    set directory=~/.vimtemp,.
 endif
 
 " Remove object files from file globs

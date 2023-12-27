@@ -4,13 +4,40 @@
     {
       "segments": [
         {
-          "foreground": "#00C5C7",
+          "type": "status",
+          "style": "powerline",
+          "invert_powerline": true,
+          "foreground": "transparent",
+          "background": "2",
+          "background_templates": [
+            "{{ if .Error }}1{{ end }}"
+          ],
+          "powerline_symbol": "\ue0b2",
           "properties": {
-            "time_format": "15:04:05"
-          },
-          "style": "plain",
-          "template": " {{ .CurrentDate | date .Format }} ",
-          "type": "time"
+            "always_enabled": true,
+            "status_template": "{{ if eq .Code 0 }}\uf00c{{ else }}{{ .Code }} \uf071{{ end }}"
+          }
+        },
+        {
+          "type": "executiontime",
+          "style": "powerline",
+          "invert_powerline": true,
+          "foreground": "0",
+          "background": "3",
+          "template": " {{ .FormattedMs }} ",
+          "powerline_symbol": "\ue0b2",
+          "properties": {
+            "threshold": 500,
+            "style": "austin",
+            "always_enabled": false
+          }
+        },
+        {
+          "type": "text",
+          "style": "powerline",
+          "foreground": "transparent",
+          "background": "transparent",
+          "template": "\u00a0"
         }
       ],
       "type": "rprompt"
@@ -22,13 +49,12 @@
           "background": "7",
           "foreground": "232",
           "style": "powerline",
-          "powerline_symbol": "\ue0b0",
           "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}} ",
           "type": "os"
         },
         {
-          "background": "4",
-          "foreground": "254",
+          "background": "1",
+          "foreground": "232",
           "style": "powerline",
           "powerline_symbol": "\ue0b0",
           "template": " \uf0e7 ",
@@ -42,7 +68,7 @@
           },
           "style": "powerline",
           "powerline_symbol": "\ue0b0",
-          "template": "{{ .Path }} ",
+          "template": " {{ .Path }} ",
           "type": "path"
         },
         {
@@ -66,5 +92,11 @@
       "type": "prompt"
     }
   ],
+  "transient_prompt": {
+      "background": "transparent",
+      "foreground": "240",
+      "template": "\u276f "
+  },
+  "final_space": true,
   "version": 2
 }

@@ -50,16 +50,40 @@ augroup END
 colorscheme wallaby
 let g:airline_theme='wombat'
 
+" Highlight current line and column
+set cursorline
+set cursorcolumn
+
+" color column after textwidth
+set colorcolumn=+1
+
+" Show line numbers
+set number
+
+" vim-gitgutter options
+" Enable faster updates
+set updatetime=100
+highlight! link SignColumn LineNr
+let g:gitgutter_set_sign_backgrounds = 1
+
+" vim-airline options
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#ale#enabled = 1
+
+" Enable Doxygen highlighting in supported languages
+let g:load_doxygen_syntax = 1
+
+" Search highlighting, press space to clear
+set hlsearch
+nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
+
 set autoindent
 
 set tabstop=4
 set shiftwidth=4
 set expandtab
 
-set number
 set ignorecase
-" color column after textwidth
-set colorcolumn=+1
 
 if has('win32') || has('osx')
 set clipboard=unnamed
@@ -67,20 +91,12 @@ else
 set clipboard=unnamedplus
 endif
 
-" Search highlighting, press space to clear
-set hlsearch
-nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
-
 " Prefer user directory for swap instead of working dir
 if has('win32')
 set directory=$USERPROFILE/vimtemp,.
 else
 set directory=~/.vimtemp,.
 endif
-
-" Highlight current line and column
-set cursorline
-set cursorcolumn
 
 " Remove object files from file globs
 set wildignore+=*.o
@@ -100,23 +116,9 @@ let g:ctrlp_working_path_mode = 'rw'
 let g:ctrlp_show_hidden = 1
 let g:ctrlp_user_command = ['.git', 'git -C %s ls-files -oc --exclude-standard']
 
-" vim-airline options
-let g:airline_powerline_fonts = 1
-let g:airline#extensions#ale#enabled = 1
-
-" vim-gitgutter options
-" Enable faster updates
-set updatetime=100
-highlight! link SignColumn LineNr
-let g:gitgutter_set_sign_backgrounds = 1
-
-
 " Enable omnicomplete
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
-
-" Enable Doxygen highlighting in supported languages
-let g:load_doxygen_syntax = 1
 
 " Only load requested linters
 let g:ale_linters_explicit = 1

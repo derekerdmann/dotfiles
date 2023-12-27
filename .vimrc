@@ -77,15 +77,16 @@ let g:load_doxygen_syntax = 1
 set hlsearch
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
-set autoindent
-
 " Lowercase searches are case-insensitive
 set smartcase
 
+" Indentation defaults
+set autoindent
 set tabstop=4
 set shiftwidth=4
 set expandtab
 
+" Use the system clipboard for the default yank register
 if has('win32') || has('osx')
 set clipboard=unnamed
 else

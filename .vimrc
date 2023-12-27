@@ -79,11 +79,12 @@ nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
 set autoindent
 
+" Lowercase searches are case-insensitive
+set smartcase
+
 set tabstop=4
 set shiftwidth=4
 set expandtab
-
-set ignorecase
 
 if has('win32') || has('osx')
 set clipboard=unnamed

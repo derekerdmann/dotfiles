@@ -24,11 +24,11 @@ function! LyFormat(buffer) abort
         \ }
 endfunction
 
-let g:ale_fixers = {
-  \   'lilypond': [
-  \       'LyFormat'
-  \   ],
-  \}
+let b:ale_fixers = [
+  \ 'LyFormat',
+  \ 'remove_trailing_lines',
+  \ 'trim_whitespace',
+  \ ]
 
 runtime! compiler/lilypond.vim
 

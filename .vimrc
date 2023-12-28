@@ -129,3 +129,8 @@ let g:ctrlp_user_command = ['.git', 'git -C %s ls-files -oc --exclude-standard']
 
 " Only load requested linters
 let g:ale_linters_explicit = 1
+
+let g:ale_lint_delay = 1000
+
+let g:ale_warn_about_trailing_blank_lines = 1
+let g:ale_warn_about_trailing_whitespace = 1

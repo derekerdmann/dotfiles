@@ -41,6 +41,8 @@ function! OverrideHighlights() abort
     highlight GitGutterAdd guifg=#95e454 ctermfg=113
     highlight GitGutterChange guifg=#fde76e ctermfg=3
     highlight GitGutterDelete guifg=#e5786d ctermfg=1
+
+    highlight default link cSpaceError ALEWarning
 endfunction
 
 augroup OverrideColors

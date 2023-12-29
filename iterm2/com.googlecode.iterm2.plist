@@ -954,6 +954,25 @@
 			<string>xterm-256color</string>
 			<key>Transparency</key>
 			<real>0.0</real>
+			<key>Triggers</key>
+			<array>
+				<dict>
+					<key>action</key>
+					<string>iTermHyperlinkTrigger</string>
+					<key>parameter</key>
+					<string>https://github.com/\1/\2/commit/\3</string>
+					<key>regex</key>
+					<string>([\w-]+)\/([\w-]+)@([a-fA-F\d]+)</string>
+				</dict>
+				<dict>
+					<key>action</key>
+					<string>iTermHyperlinkTrigger</string>
+					<key>parameter</key>
+					<string>https://github.com/\1/\2/pull/\3</string>
+					<key>regex</key>
+					<string>([\w-]+)\/([\w-]+)#(\d+)</string>
+				</dict>
+			</array>
 			<key>Unlimited Scrollback</key>
 			<true/>
 			<key>Use Bold Font</key>

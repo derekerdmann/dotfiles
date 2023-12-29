@@ -84,6 +84,7 @@ plugins=(
   copypath
   jenv
   gradle
+  brew
 )
 
 source $ZSH/oh-my-zsh.sh

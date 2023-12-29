@@ -7,8 +7,11 @@
           "type": "status",
           "style": "powerline",
           "invert_powerline": true,
-          "foreground": "transparent",
-          "background": "2",
+          "foreground": "2",
+          "background": "0",
+          "foreground_templates": [
+            "{{ if .Error }}0{{ end }}"
+          ],
           "background_templates": [
             "{{ if .Error }}1{{ end }}"
           ],

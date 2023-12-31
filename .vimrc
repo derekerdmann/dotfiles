@@ -6,6 +6,7 @@ set termencoding=utf-8
 " detection in defaults.vim.
 
 packadd! matchit
+packadd! editexisting
 
 " If installed, add GNU LilyPond Vim plugins from distribution
 if executable('lilypond')

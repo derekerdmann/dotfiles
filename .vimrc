@@ -88,7 +88,9 @@ set wildignorecase
 
 " Command-line completion shows matches in a popup menu
 set wildmenu
-set wildoptions=pum
+if has('patch-8.2.4325')
+    set wildoptions=pum
+endif
 
 " Indentation defaults
 set autoindent

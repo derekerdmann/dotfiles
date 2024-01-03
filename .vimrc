@@ -81,6 +81,7 @@ set hlsearch
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
 " Lowercase searches are case-insensitive
+set ignorecase
 set smartcase
 
 " File completion is case-insensitive

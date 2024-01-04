@@ -135,9 +135,21 @@ let g:ctrlp_user_command = ['.git', 'git -C %s ls-files -oc --exclude-standard']
 let g:ale_linters_explicit = 1
 
 let g:ale_lint_delay = 1000
+let g:ale_lint_on_text_changed = 'normal'
 
 let g:ale_warn_about_trailing_blank_lines = 1
 let g:ale_warn_about_trailing_whitespace = 1
+
+" Automatically lint after switching back to a window
+function! LintOnFocusGained()
+    if mode() == 'n'
+        execute 'ALELint'
+    endif
+endfunction
+
+augroup LintOnFocusGainedGroup
+    autocmd FocusGained * call LintOnFocusGained()
+augroup END
 
 " Don't prefill a new bitbake file
 let g:bb_create_on_empty=0

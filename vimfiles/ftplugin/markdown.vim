@@ -22,3 +22,12 @@ let g:markdown_fenced_languages = [
     \ 'cmake',
     \ 'meson'
     \ ]
+
+let b:ale_linters = [
+    \ 'vale',
+    \ ]
+
+let b:ale_fixers = [
+    \ 'remove_trailing_lines',
+    \ 'trim_whitespace',
+    \]

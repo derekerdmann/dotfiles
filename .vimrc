@@ -149,6 +149,7 @@ endfunction
 
 augroup LintOnFocusGainedGroup
     autocmd FocusGained * call LintOnFocusGained()
+    autocmd TabEnter * call LintOnFocusGained()
 augroup END
 
 " Don't prefill a new bitbake file

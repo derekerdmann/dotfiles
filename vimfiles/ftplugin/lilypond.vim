@@ -5,6 +5,8 @@ elseif has('osx')
     noremap <buffer> <F6> :silent !open "%<.pdf"<Return>
 endif
 
+noremap <buffer> <F5> :w<Return>:make %<Return>
+
 " ALE formatting using python-ly
 function! LyFormat(buffer) abort
     let commands = [

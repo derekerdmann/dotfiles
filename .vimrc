@@ -99,6 +99,9 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
+" Disable error bells
+set belloff=all
+
 " Use the system clipboard for the default yank register
 if has('win32') || has('osx')
     set clipboard=unnamed

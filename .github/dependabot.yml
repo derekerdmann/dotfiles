@@ -1,3 +1,4 @@
+---
 version: 2
 updates:
   - package-ecosystem: "gitsubmodule"
@@ -9,7 +10,7 @@ updates:
     groups:
       vim:
         patterns:
-        - "vimfiles/*"
+          - "vimfiles/*"
       zsh:
         patterns:
-        - "oh-my-zsh-custom/*"
+          - "oh-my-zsh-custom/*"

@@ -1,0 +1,32 @@
+---
+name: Lint
+
+"on": [push, pull_request]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+
+      - name: Set up Python 3.9
+        id: python39
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.9
+          check-latest: true
+
+      - name: Vint
+        shell: bash
+        run: |
+          pipx install --python '${{ steps.python39.outputs.python-path }}' vim-vint
+          vint $(git ls-files -s '.*vim*' '**/*.vim' | awk '!/^16/ {print $4}')
+
+      - name: yamllint
+        shell: bash
+        run: |
+          pipx install yamllint
+          yamllint $(git ls-files -s '*.yml' '**/*.yml' '*.yaml' '**/*.yaml' | awk '!/^16/ {print $4}')

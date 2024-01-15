@@ -14,3 +14,9 @@ updates:
       zsh:
         patterns:
           - "oh-my-zsh-custom/*"
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+
+    schedule:
+      interval: "weekly"

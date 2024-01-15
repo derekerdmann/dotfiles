@@ -145,7 +145,7 @@ let g:ale_warn_about_trailing_whitespace = 1
 
 " Automatically lint after switching back to a window
 function! LintOnFocusGained()
-    if mode() == 'n'
+    if mode() ==# 'n'
         execute 'ALELint'
     endif
 endfunction

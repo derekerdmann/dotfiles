@@ -76,3 +76,6 @@
 [submodule "vimfiles/pack/tpope/start/vim-rhubarb"]
 	path = vimfiles/pack/tpope/start/vim-rhubarb
 	url = https://github.com/tpope/vim-rhubarb.git
+[submodule "vimfiles/pack/tpope/opt/vim-scriptease"]
+	path = vimfiles/pack/tpope/opt/vim-scriptease
+	url = https://github.com/tpope/vim-scriptease.git

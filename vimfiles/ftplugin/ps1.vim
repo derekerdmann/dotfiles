@@ -8,5 +8,5 @@ let b:ale_fixers = [
     \ ]
 
 if !executable('pwsh')
-    let g:ale_powershell_powershell_executable = "powershell.exe"
+    let g:ale_powershell_powershell_executable = 'powershell.exe'
 endif

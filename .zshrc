@@ -85,6 +85,7 @@ plugins=(
   jenv
   gradle
   brew
+  rbenv
 )
 
 source $ZSH/oh-my-zsh.sh

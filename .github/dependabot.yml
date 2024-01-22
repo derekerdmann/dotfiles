@@ -5,15 +5,7 @@ updates:
     directory: "/"
 
     schedule:
-      interval: "weekly"
-
-    groups:
-      vim:
-        patterns:
-          - "vimfiles/*"
-      zsh:
-        patterns:
-          - "oh-my-zsh-custom/*"
+      interval: "daily"
 
   - package-ecosystem: "github-actions"
     directory: "/"

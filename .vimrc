@@ -7,6 +7,11 @@ set termencoding=utf-8
 
 packadd! matchit
 packadd! editexisting
+if v:version >= 901
+    packadd! editorconfig
+else
+    packadd! editorconfig-vim
+endif
 
 " If installed, add GNU LilyPond Vim plugins from distribution
 if executable('lilypond')

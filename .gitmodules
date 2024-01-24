@@ -79,3 +79,6 @@
 [submodule "vimfiles/pack/tpope/opt/vim-scriptease"]
 	path = vimfiles/pack/tpope/opt/vim-scriptease
 	url = https://github.com/tpope/vim-scriptease.git
+[submodule "vimfiles/pack/local/opt/editorconfig-vim"]
+	path = vimfiles/pack/local/opt/editorconfig-vim
+	url = https://github.com/editorconfig/editorconfig-vim.git

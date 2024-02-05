@@ -104,6 +104,9 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
+let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
+let g:EditorConfig_enable_for_new_buf = 1
+
 " Disable error bells
 set belloff=all
 

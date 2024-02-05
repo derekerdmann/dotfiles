@@ -107,6 +107,9 @@ set expandtab
 let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
 let g:EditorConfig_enable_for_new_buf = 1
 
+" When joining lines, remove the second line's leading comment characters
+set formatoptions+=j
+
 " Disable error bells
 set belloff=all
 

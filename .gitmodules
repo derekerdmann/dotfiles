@@ -76,3 +76,6 @@
 [submodule "vimfiles/pack/local/opt/editorconfig-vim"]
 	path = vimfiles/pack/local/opt/editorconfig-vim
 	url = https://github.com/editorconfig/editorconfig-vim.git
+[submodule "vimfiles/pack/plugins/start/Jenkinsfile-vim-syntax"]
+	path = vimfiles/pack/plugins/start/Jenkinsfile-vim-syntax
+	url = https://github.com/martinda/Jenkinsfile-vim-syntax.git

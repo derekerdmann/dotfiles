@@ -76,3 +76,6 @@
 [submodule "vimfiles/pack/local/opt/editorconfig-vim"]
 	path = vimfiles/pack/local/opt/editorconfig-vim
 	url = https://github.com/editorconfig/editorconfig-vim.git
+[submodule "vimfiles/pack/plugins/start/guile.vim"]
+	path = vimfiles/pack/plugins/start/guile.vim
+	url = https://gitlab.com/HiPhish/guile.vim.git

@@ -130,6 +130,13 @@ endif
 " Remove object files from file globs
 set wildignore+=*.o
 
+" Regenerate binary spell files if the .add files were modified
+for d in glob('~/.vim/spell/*.add', 1, 1)
+    if filereadable(d) && (!filereadable(d . '.spl') || getftime(d) > getftime(d . '.spl'))
+        exec 'mkspell! ' . fnameescape(d)
+    endif
+endfor
+
 " Show a tree-style netrw listing
 let g:netrw_home = '~/.netrw'
 let g:netrw_liststyle = 3

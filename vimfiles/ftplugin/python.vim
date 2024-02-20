@@ -15,3 +15,4 @@ let b:ale_fixers = [
 let g:ale_python_auto_pipenv = 1
 let g:ale_python_auto_poetry = 1
 let g:ale_python_auto_virtualenv = 1
+let g:ale_python_pylint_change_directory = 0

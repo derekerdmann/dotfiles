@@ -42,3 +42,5 @@
     ff = only
 [blame]
     markIgnoredLines = true
+[fetch]
+    prune = true

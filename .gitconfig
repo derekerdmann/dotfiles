@@ -9,7 +9,7 @@
     glog = log --decorate --oneline --graph
     # "git brel" shows the relationships between refs
     brel = log --all --decorate --oneline --graph --simplify-by-decoration --first-parent
-    com = commit    
+    com = commit
     last = log -1
     chardiff = diff --word-diff-regex=.
     # https://www.atlassian.com/blog/git/advanced-git-aliases
@@ -41,4 +41,4 @@
 [pull]
     ff = only
 [blame]
-	markIgnoredLines = true
+    markIgnoredLines = true

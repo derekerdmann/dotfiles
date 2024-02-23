@@ -20,7 +20,8 @@ let g:markdown_fenced_languages = [
     \ 'kotlin',
     \ 'swift',
     \ 'cmake',
-    \ 'meson'
+    \ 'meson',
+    \ 'vim',
     \ ]
 
 let b:ale_linters = [

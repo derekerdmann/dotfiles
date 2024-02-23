@@ -31,6 +31,7 @@
 [diff]
     colorMoved = default
     colorMovedWS = allow-indentation-change
+    algorithm = histogram
 [init]
     defaultBranch = main
 [filter "lfs"]

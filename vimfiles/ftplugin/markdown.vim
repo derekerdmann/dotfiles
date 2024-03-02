@@ -22,6 +22,7 @@ let g:markdown_fenced_languages = [
     \ 'cmake',
     \ 'meson',
     \ 'vim',
+    \ 'dockerfile',
     \ ]
 
 let b:ale_linters = [

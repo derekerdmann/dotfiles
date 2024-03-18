@@ -9,3 +9,6 @@ let b:ale_fixers = [
 " Formatting from stdin mixes ktlint log output with the resulting file
 " https://github.com/pinterest/ktlint/issues/2246
 let g:ale_kotlin_ktlint_options = '--log-level=none'
+
+" Always evaluate syntax highlighting from the start of the file
+syntax sync fromstart

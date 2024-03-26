@@ -24,6 +24,7 @@ let g:markdown_fenced_languages = [
     \ 'vim',
     \ 'dockerfile',
     \ 'yaml',
+    \ 'toml',
     \ ]
 
 let b:ale_linters = [

@@ -173,5 +173,8 @@ augroup LintOnFocusGainedGroup
     autocmd TabEnter * call LintOnFocusGained()
 augroup END
 
+let g:ale_completion_enabled = 1
+set omnifunc=ale#completion#OmniFunc
+
 " Don't prefill a new bitbake file
 let g:bb_create_on_empty=0

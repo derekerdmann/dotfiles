@@ -8,7 +8,6 @@ if has('osx') && !empty(trim(system('mdfind -name kMDItemFSName==Skim.app')))
 endif
 
 let b:ale_linters = [
-    \ 'lacheck',
     \ 'chktex',
     \ 'texlab',
     \ ]

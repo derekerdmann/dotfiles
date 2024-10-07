@@ -130,6 +130,18 @@ endif
 " Remove object files from file globs
 set wildignore+=*.o
 
+" Use project-specific spellfiles if present in the current directory.
+" Based on https://superuser.com/a/716958/24336, but preserves the global
+" spellfile that's alredy known to exist
+let s:encoding = &l:fileencoding ==# '' ? &l:encoding : &l:fileencoding
+let s:projectspellfile = getcwd() . '/.vimspell.' . s:encoding . '.add'
+if filereadable(s:projectspellfile)
+    let &spellfile = s:projectspellfile.',~/.vim/spell/en.utf-8.add'
+endif
+
+" Include suggestions in completion results
+set complete+=kspell
+
 " Regenerate binary spell files if the .add files were modified
 for d in glob('~/.vim/spell/*.add', 1, 1)
     if filereadable(d) && (!filereadable(d . '.spl') || getftime(d) > getftime(d . '.spl'))

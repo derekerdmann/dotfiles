@@ -1,4 +1,5 @@
 set spell
+setlocal spelloptions+=camel
 
 if has('osx') && !empty(trim(system('mdfind -name kMDItemFSName==Skim.app')))
     let g:vimtex_view_method = 'skim'

@@ -1,10 +1,10 @@
 let g:vim_markdown_folding_disabled=1
 
-set nofoldenable
+setlocal nofoldenable
 
-set spell
+setlocal spell
 setlocal shiftwidth=4 tabstop=4
-set textwidth=80
+setlocal textwidth=80
 
 let g:markdown_fenced_languages = [
     \ 'html',

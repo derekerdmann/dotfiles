@@ -1,4 +1,4 @@
-set spell
+setlocal spell
 setlocal spelloptions+=camel
 
 if has('osx') && !empty(trim(system('mdfind -name kMDItemFSName==Skim.app')))

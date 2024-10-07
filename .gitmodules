@@ -79,3 +79,6 @@
 [submodule "vimfiles/pack/plugins/start/guile.vim"]
 	path = vimfiles/pack/plugins/start/guile.vim
 	url = https://gitlab.com/HiPhish/guile.vim.git
+[submodule "vimfiles/pack/plugins/start/vim-dirtytalk"]
+	path = vimfiles/pack/plugins/start/vim-dirtytalk
+	url = https://github.com/psliwka/vim-dirtytalk.git

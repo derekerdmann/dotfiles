@@ -28,6 +28,7 @@ jobs:
         shell: bash
         run: |
           pipx install --python '${{ steps.python39.outputs.python-path }}' vim-vint
+          pipx inject vim-vint setuptools
           vint $(git ls-files -s '.*vim*' '**/*.vim' | awk '!/^16/ {print $4}')
 
       - name: yamllint

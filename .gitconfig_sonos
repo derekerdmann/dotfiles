@@ -1,7 +1,0 @@
-[user]
-    email = derek.erdmann@sonos.com
-[alias]
-    find-merge = "!f() { git log --reverse --ancestry-path --merges --oneline official/main ^$1; }; f"
-    update-copyright = "!f() { for file in $(git diff --name-only --relative $1); do SonosCopyright $file; done; }; f"
-[merge "sonos_theirs"]
-    driver = true

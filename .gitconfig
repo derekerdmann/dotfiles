@@ -2,7 +2,6 @@
     name = Derek Erdmann
     email = derek@derekerdmann.com
 [include]
-    path = .gitconfig_sonos
     path = .gitconfig_windows
 [alias]
     st = status

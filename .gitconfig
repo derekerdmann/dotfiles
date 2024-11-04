@@ -44,3 +44,5 @@
     markIgnoredLines = true
 [fetch]
     prune = true
+[advice]
+    addEmptyPathspec = false

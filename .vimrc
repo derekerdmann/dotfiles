@@ -13,6 +13,11 @@ else
     packadd! editorconfig-vim
 endif
 
+" Proactively load netrw to make netrw_gitignore#Hide() available
+if has('patch-9.1.1026')
+    packadd! netrw
+endif
+
 " If installed, add GNU LilyPond Vim plugins from distribution
 if executable('lilypond')
     let &runtimepath .= ',' . escape(trim(system('lilypond -e  "(display (ly:get-option ''datadir)) (exit)"')) . '/vim', '\,')

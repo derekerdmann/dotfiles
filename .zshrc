@@ -86,6 +86,7 @@ plugins=(
   gradle
   brew
   rbenv
+  rust
 )
 
 source $ZSH/oh-my-zsh.sh

@@ -25,6 +25,7 @@ let g:markdown_fenced_languages = [
     \ 'dockerfile',
     \ 'yaml',
     \ 'toml',
+    \ 'mail',
     \ ]
 
 let b:ale_linters = [

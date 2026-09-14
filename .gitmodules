@@ -48,7 +48,7 @@
 	url = https://github.com/udalov/kotlin-vim.git
 [submodule "vimfiles/pack/dist/start/vim-airline"]
 	path = vimfiles/pack/dist/start/vim-airline
-	url = http://github.com/vim-airline/vim-airline.git
+	url = https://github.com/vim-airline/vim-airline.git
 [submodule "vimfiles/pack/sheerun/start/vim-wombat-scheme"]
 	path = vimfiles/pack/sheerun/start/vim-wombat-scheme
 	url = https://github.com/sheerun/vim-wombat-scheme.git

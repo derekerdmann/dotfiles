@@ -24,7 +24,7 @@
 			<key>Text</key>
 			<string></string>
 		</dict>
-		<key>0xd-0x100000-0x24</key>
+		<key>0xd-0x100000-0x24-0x1</key>
 		<dict>
 			<key>Action</key>
 			<integer>13</integer>
